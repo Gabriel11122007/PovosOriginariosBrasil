@@ -146,36 +146,9 @@ body {
   margin-left: 6px;
   font-size: 0.8em;
 }
-.ma-header__dropdown-menu {
-  position: absolute;
-  top: 110%;
-  left: 0;
-  background-color: #b86e5f;
-  border-radius: 8px;
-  padding: 8px 0;
-  display: none;
-  min-width: 180px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.ma-header__dropdown-menu li a {
-  display: block;
-  padding: 10px 20px;
-  color: white;
-  font-size: 14px;
-}
-.ma-header__dropdown-menu li a:hover {
-  background-color: #a65a4a;
-}
 
 body.menu-open {
   overflow-x: hidden;
-}
-
-/* Mostrar dropdown (desktop) */
-@media (min-width: 769px) {
-  .ma-header__nav-item--dropdown:hover .ma-header__dropdown-menu {
-    display: block;
-  }
 }
 
 /* Menu Mobile */
@@ -194,6 +167,47 @@ body.menu-open {
   font-size: 20px;
   }
   
+}
+/* Esconde o dropdown por padrão */
+.ma-header__dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #C9816B;
+  min-width: 180px;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 6px;
+}
+
+/* Itens do dropdown */
+.ma-header__dropdown-menu li {
+  padding: 10px 15px;
+}
+
+.ma-header__dropdown-menu li a {
+  text-decoration: none;
+  color: #e9e9e9;
+  display: block;
+}
+
+/* Hover no desktop */
+.ma-header__nav-item--dropdown:hover .ma-header__dropdown-menu {
+  display: block;
+}
+
+/* Ícone de dropdown */
+.dropdown-icon {
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+
+/* Responsivo: mostrar dropdown ao clicar no mobile */
+@media screen and (max-width: 768px) {
+  .ma-header__dropdown-menu {
+    position: relative;
+  }
 }
 
 @media (max-width: 768px) {
@@ -237,17 +251,6 @@ body.menu-open {
     display: block;
   }
 
-  .ma-header__dropdown-menu {
-    position: static;
-    background-color: #b86e5f;
-    display: none;
-    box-shadow: none;
-    padding-left: 24px;
-  }
-
-  .ma-header__nav-item--dropdown.active .ma-header__dropdown-menu {
-    display: block;
-  }
 }
 
 /* Reset básico */
@@ -1055,13 +1058,13 @@ p{
 
 .ritual-box {
   position: absolute;
-  width: 380px;
+  width: 28vw;
   background-color: var(--cor-destaque);
   padding: 20px;
   border: 1px solid var(--cor-caixa);
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
   border-radius: 6px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .ritual-box:hover {
@@ -1244,37 +1247,32 @@ p{
 }
 
 
-
-
-
-
-
-
-
-
-
-.titulo {
-  font-family: 'Arial', sans-serif; /* Fonte moderna e legível */
-  font-size: 2.5rem;                 /* Tamanho grande para destaque */
-  font-weight: 700;                  /* Negrito */
-  color: var(--cor-primaria, #c14c4c); /* Usa variável ou fallback vermelho */
-  text-align: center;                /* Centralizado */
-  margin: 40px 0 20px 0;             /* Espaçamento acima e abaixo */
-  letter-spacing: 1px;               /* Espaçamento entre letras */
-  line-height: 1.2;                  /* Altura da linha */
-  text-transform: uppercase;         /* Letras maiúsculas */
+@media (max-width: 600px) {
+ .ritual-box h3, .ritual-box p {
+  font-size: 0.7rem !important;
+  margin-bottom: 4px;
 }
+
+}
+
+
+
+
+
+
+
+
 
 /* Subtítulos ou tamanhos menores em telas menores */
 @media (max-width: 900px) {
-  .titulo {
+  #titulo {
     font-size: 6rem;
   }
 }
 
 @media (max-width: 600px) {
   #titulo {
-    font-size: 1.6rem;
+    font-size: 3rem;
     margin: 30px 0 15px 0;
   }
 }
