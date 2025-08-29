@@ -1,0 +1,170 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #D8BA99 !important; 
+  }
+
+  svg {
+    width: 90%;
+    height: auto;
+  }
+
+  .shape {
+    fill: #ccc;
+    stroke: #000;
+    stroke-width: 0.3;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+  }
+
+  #indigenaButton:hover{
+    background-color: #712626;
+    color: white;
+  }
+
+  #quilombolaButton:hover{
+    background-color: #af8252;
+    color: white;
+  }
+
+  #ribeirinhoButton:hover{
+    background-color: #c87d27;
+    color: white;
+  }
+
+  #caicaraButton:hover{
+    background-color: #a95728;
+    color: white;
+  }
+
+  #kalungaButton:hover{
+    background-color: #DEB887;
+    color: white;
+  }
+
+  #limparButton:hover{
+    background-color: #ff7d7d;
+    color: white;
+  }
+
+  .indigena { fill: #712626 !important;}
+  .quilombola { fill: #a46c30 !important;}
+  .ribeirinho { fill: #c87d27 !important;}
+  .caicara { fill: #a95728 !important;}
+  .kalunga { fill: #DEB887 !important}
+
+  .btns {
+    margin: 20px;
+  }
+
+  .btns button {
+    margin: 5px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 6px;
+  }
+
+  .selectButton{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: 130px;
+    height: 50px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .mapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner{
+    display: flex;
+    width: 100vw;
+    height: auto;
+  }
+
+  /*Começo mapa SVG*/
+  .mapaSvg{
+    display: flex;
+    justify-content: center;
+    margin-left: 10vw;
+  }
+
+  .mapaBtn{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+
+  .btns{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px 20px; /* vertical e horizontal spacing */
+  padding-left: 70px;
+  }
+
+  .seeMore:hover{
+    cursor: pointer;
+  }
+
+  .mapa .mapaSvg{
+    width: 650px;
+    height: 650px;
+
+    margin-top: 80px;
+  }
+  /*Fim do mapa SVG*/
+
+@media (max-width: 768px) {
+    .mapaSvg{
+      margin-left: 0;
+    }
+
+    .mapa .mapaSvg{
+      width: 300px;
+      height: 300px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+
+    .mapa svg{
+      width: auto;
+      height: 932px;
+    }
+
+    .mapaBtn{
+      display: flex;
+      flex-direction: column;
+      height: 70vh;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .btns{
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 15px 30px; /* vertical e horizontal spacing */
+      padding-left: 0;
+    }
+
+    body{
+      max-width: 100%;
+      width: 400px;
+      height: auto;
+    }
+}

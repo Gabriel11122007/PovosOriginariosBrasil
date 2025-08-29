@@ -1,0 +1,90 @@
+/* Reset e fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6fff6;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 2em;
+  color: #2c3e50;
+}
+
+/* Cards grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 5%;
+}
+
+.card-container{
+    display: none;
+}
+
+/* Estilo do card */
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card i {
+  font-size: 2rem;
+  color: #987e43;
+  margin-bottom: 1rem;
+}
+
+.card .content h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5rem;
+}
+
+.card .content p {
+  font-size: 1em;
+  color: #555;
+  text-align: left;
+}
+
+.seeMore{
+  padding: 10px 25px;
+  background-color: #8e6527;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cards {
+    padding: 1rem 2rem;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .card .content p {
+    font-size: 0.95em;
+  }
+}

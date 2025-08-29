@@ -1,0 +1,466 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos isolados para o rodapé */
+#custom-footer {
+    background-color: #3b2f2f;
+    color: #f0e9dd;
+    font-family: 'Segoe UI', 'Verdana', sans-serif;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    border-top: 6px solid #836953;
+}
+
+#custom-footer .footer-block {
+    flex: 1 1 250px;
+    min-width: 250px;
+}
+
+#custom-footer .block-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #f3d89c;
+    border-bottom: 2px solid #f3d89c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#custom-footer .block-text,
+#custom-footer .legal-text {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #e6e1d4;
+
+}
+
+#custom-footer .block-link {
+    display: inline-block;
+    color: #c0b28c;
+    margin: 5px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#custom-footer .block-link:hover {
+    color: #f3d89c;
+    text-decoration: underline;
+}
+
+/* Formulário de newsletter */
+#custom-footer .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#custom-footer .newsletter-input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5a4c4c;
+    color: #fff;
+}
+
+#custom-footer .newsletter-button {
+    padding: 10px;
+    background-color: #7a6248;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#custom-footer .newsletter-button:hover {
+    background-color: #a3805a;
+}
+
+/* Ícones sociais */
+#custom-footer .social-icons {
+    margin-top: 10px;
+}
+
+#custom-footer .social-icon {
+    margin-right: 10px;
+    color: #d4c0a1;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#custom-footer .social-icon:hover {
+    transform: scale(1.1);
+    color: #f3d89c;
+}
+
+/* Seção legal */
+#custom-footer .full-width {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    border-top: 1px solid #5a4c4c;
+    padding-top: 20px;
+    color: #b8aa94;
+}
+
+@media screen and (max-width: 768px) {
+    #custom-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #custom-footer .full-width {
+        text-align: left;
+    }
+}
+
+/* === CELULAR: até 580px === */
+@media screen and (max-width: 580px) {
+    #custom-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 16px;
+        gap: 20px;
+    }
+
+    #custom-footer .footer-block {
+        flex: 1 1 50px;
+        min-width: 100%;
+    }
+
+    #custom-footer .block-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    #custom-footer .block-text,
+    #custom-footer .legal-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #custom-footer .block-link {
+        font-size: 14px;
+    }
+
+    #custom-footer .newsletter-input,
+    #custom-footer .newsletter-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #custom-footer .social-icon {
+        font-size: 22px;
+        margin-right: 8px;
+    }
+
+    #custom-footer .full-width {
+        font-size: 12px;
+        text-align: left;
+        padding-top: 16px;
+        margin-top: 20px;
+    }
+}
+
+/* === CELULAR: até 580px === */
+@media screen and (max-width: 580px) {
+    #custom-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 12px;
+        /* Reduzido */
+        gap: 12px;
+        /* Reduzido */
+    }
+
+    #custom-footer .footer-block {
+        min-width: 100%;
+    }
+
+    /* Ajustando o espaçamento dos blocos */
+    #custom-footer .block-title {
+        font-size: 16px;
+        /* Reduzido */
+        margin-bottom: 6px;
+        /* Reduzido */
+    }
+
+    #custom-footer .block-text,
+    #custom-footer .legal-text {
+        font-size: 13px;
+        /* Reduzido */
+        line-height: 18px;
+        /* Reduzido */
+        margin-bottom: 4px;
+        /* Reduzido */
+    }
+
+    #custom-footer .block-link {
+        font-size: 13px;
+        /* Reduzido */
+        margin: 4px 0;
+        /* Reduzido */
+    }
+
+    #custom-footer .footer-block .block-link {
+        margin-bottom: 6px;
+        /* Ajustando espaçamento dos links */
+    }
+
+
+    #custom-footer .newsletter-input,
+    #custom-footer .newsletter-button {
+        font-size: 13px;
+        /* Reduzido */
+        padding: 8px;
+        /* Reduzido */
+    }
+
+    #custom-footer .social-icon {
+        font-size: 20px;
+        /* Reduzido */
+        margin-right: 6px;
+        /* Reduzido */
+    }
+
+
+    #custom-footer .full-width {
+        font-size: 11px;
+        /* Reduzido */
+        text-align: left;
+        padding-top: 12px;
+        /* Reduzido */
+        margin-top: 16px;
+        /* Reduzido */
+    }
+}
+
+/* === TABLET: de 581px até 1023px === */
+@media screen and (min-width: 581px) and (max-width: 1023px) {
+    #custom-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 32px 24px;
+        gap: 24px;
+    }
+
+    #custom-footer .footer-block {
+        min-width: 280px;
+    }
+
+    #custom-footer .block-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    #custom-footer .block-text,
+    #custom-footer .legal-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    #custom-footer .block-link {
+        font-size: 15px;
+    }
+
+    #custom-footer .newsletter-input,
+    #custom-footer .newsletter-button {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    #custom-footer .social-icon {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    #custom-footer .full-width {
+        font-size: 13px;
+        text-align: center;
+        padding-top: 18px;
+        margin-top: 24px;
+    }
+}
+
+
+
+
+
+
+
+/* Opcional: ajustar aparência do modal */
+dialog#terms-modal {
+    width: 90%;
+    max-width: 500px;
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);  /* sombra suave atrás do modal */
+    display: flex; /* sobrescreve display:none do UA */
+  }
+  
+  
+  /* Cabeçalho e botão de fechar */
+  #terms-modal h2 {
+    margin-top: 0;
+  }
+  #close-terms {
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  /* Aplica flex *apenas* quando [open], respeitando o display:none padrão */
+dialog[open] {
+    display: flex;
+    /* seu layout interno… */
+  }
+  
+  /* Backdrop nativo */
+  dialog::backdrop {
+    background: rgba(0,0,0,0.4);
+  }
+  
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      /*background-color: #222;*/
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 11px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ccc;
+    }
+
+    .secFooter {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      background-color: white;
+      color: #333;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #ddd;
+    }
+
+    .about, .services, .contact {
+      background: white;
+    }
+
+    .about h2, .services h2, .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .services li {
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #764ba2;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #5a3c84;
+    }
+

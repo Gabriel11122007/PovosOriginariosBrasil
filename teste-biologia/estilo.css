@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f6fff6;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 154px;
+    border-radius: 50px;
+    padding: 1rem;
+    flex-direction: row;
+    word-break: break-word;
+    opacity: 1; /* Começa invisível */
+    transform: translateY(30px); /* Começa ligeiramente abaixo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
+}
+
+/* Adicionando uma classe que será aplicada quando os cards entrarem na tela */
+.card.visible {
+    opacity: 1; /* Fica visível */
+    transform: translateY(0); /* Move para sua posição original */
+}
+
+.cards {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card i {
+    font-size: 4vw;
+    color: rgba(86, 156, 77, 0.867);
+}
+
+.card p, h1 {
+    margin-left: 3vw;
+    font-family: 'Poppins';
+    color: rgb(96, 96, 96);
+}
+
+
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.banner{
+
+
+
+
+}
